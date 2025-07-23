@@ -22,7 +22,12 @@ cstring_t* cstring_create(const char* str) {
 }
 
 void cstring_destroy(cstring_t* cstring) {
-    free(cstring->buffer);
+    if (cstring == NULL) {
+        return;
+    }
+    if (cstring->buffer != NULL) {
+        free(cstring->buffer);
+    }
     cstring->buffer = NULL;
     cstring->size = 0;
 }
