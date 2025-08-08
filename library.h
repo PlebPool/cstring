@@ -1,6 +1,6 @@
-#ifndef UNTITLED22_LIBRARY_H
-#define UNTITLED22_LIBRARY_H
+#ifndef CSTRING_LIBRARY_H
+#define CSTRING_LIBRARY_H
 
 void hello(void);
 
-#endif //UNTITLED22_LIBRARY_H
+#endif //CSTRING_LIBRARY_H
