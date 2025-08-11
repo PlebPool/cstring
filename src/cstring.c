@@ -30,6 +30,8 @@ void cstring_destroy(cstring_t* cstring) {
     }
     cstring->buffer = NULL;
     cstring->size = 0;
+    free(cstring);
+    cstring = NULL;
 }
 
 cstring_t* cstring_copy(const cstring_t* cstring) {
